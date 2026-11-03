@@ -1,0 +1,15 @@
+info:
+  name: PUT_ID_TRATARERRO
+  type: http
+  seq: 16
+
+http:
+  method: DELETE
+  url: http://localhost:3000/estudios
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
