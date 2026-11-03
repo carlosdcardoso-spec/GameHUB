@@ -7,10 +7,10 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import conexao from "./db.js";
-import {textoValido, inteiroPositivo} from "./scr/utils/validacoes.js";
-import {validarId} from "./scr/middlewares/validarId.js";
-import tratarErro from "./scr/middlewares/tratarErro.js";
-import estudioRoute from "./scr/routes/estudioRoute.js";
+import {textoValido, inteiroPositivo} from "./src/utilis/validacoes.js";
+import validarId from "./src/middlewares/valdarId.js";
+import tratarErro from "./src/middlewares/tratarErro.js";
+import estudioRoute from "./src/routes/EstudioRoutes.js";
 
 const app = express();
 const PORTA = Number(process.env.PORTA || 3000);

@@ -1,5 +1,5 @@
 import * as estudioModel from "../models/estudioModel.js";
-import { textoValido } from "../utils/validacoes.js";
+import { textoValido } from "../utilis/validacoes.js";
 
 export function listar(req, res, next) {
     estudioModel.listar((erro, resultado) => {

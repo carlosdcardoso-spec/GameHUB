@@ -1,16 +1,16 @@
 
 import { Router } from "express";
 import * as estudioController from "../controllers/estudioController.js";
-import validarId from "../middlewares/validarId.js";
+import validarId from "../middlewares/valdarId.js";
 
-const router = Router();
+const routes = Router();
 
-router.get("/estudios", );
-router.get("/estudios/:id", validarId, );
-router.post("/estudios", );
-router.put("/estudios/:id", validarId, estudioController.atualizar);
-router.delete("/estudios/:id", validarId, estudioController.excluir);
+routes.get("/", estudioController.listar);
+routes.get("/:id", validarId,estudioController.listarPorId );
+routes.post("/", estudioController.criar);
+routes.put("/:id", validarId, estudioController.atualizar);
+routes.delete("/:id", validarId, estudioController.excluir);
 
-export default router;
+export default routes;
 
 
